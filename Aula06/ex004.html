@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt ("Qual é o seu nome? ");
+        document.write(`Olá <strong>${nome}</strong>. Seu nome tem ${nome.length} letras<br>`);
+        document.write(`Seu nome em maisculo é ${nome.toUpperCase()}`);
+        document.write(`Seu nome em maisculo é ${nome.toLowerCase()}`);
+        /*
+        Para mostrar um número real com dois dígitos após o ponto é preciso fazer:
+        var.toFixed(Casas).replace('.',',') o replace serve para substituir o ponto pela vírgula
+        Para deixar um valor em um moeda pode-se usar o comando:
+        var.toLocalString('pt-BR', {style: 'currency', currency: 'BRL'})
+        */
+
+    </script>
+</body>
+</html>
